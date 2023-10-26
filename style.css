@@ -1,0 +1,112 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* COLORS */
+
+.bg-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.color-orange {
+  color: hsl(31, 77%, 52%);
+}
+.bg-dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.color-dark-cyan {
+  color: hsl(184, 100%, 22%);
+}
+.bg-very-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.color-very-dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+.color-transparent-white {
+  color: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+}
+
+.color-light-gray {
+  color: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+.bg-light-gray {
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* RESETS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* COMMON STYLES */
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  margin: 2rem 0rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* MOBILE STYLES */
+.container {
+  width: 80%;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin: 4rem auto;
+}
+
+.card {
+  width: 100%;
+}
+.card-inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1440px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    width: 65%;
+  }
+  p {
+    margin-bottom: 5rem;
+  }
+  .card {
+    width: 33.333%;
+  }
+  .btn {
+    margin-bottom: 1.5rem;
+  }
+}
